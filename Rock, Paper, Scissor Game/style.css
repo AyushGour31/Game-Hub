@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #4d166c, #7a117a, #7832a1);
+    color: #86efff;
+    /* color: #f7f7f7; */
+    /* color: #f0ffa2; */
+    width: 100vw;
+    height: 100vh;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.title{
+    text-align: center;
+    color: #ffd4d4;
+    padding-top: 1%;
+    padding-bottom: 1.2%;
+    font-size: 3.5rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 4;
+}
+
+.game{
+    /* screen, multiply, overlay */
+    border-radius: 12px;
+    border: 1px solid #cbcbcb52;
+    font-size: 1.4rem;
+    text-align: center;
+    text-shadow: 0 0 5px #86efff;
+    /* background-color: #eeeeee22; */
+    background: linear-gradient(to bottom right, #eeeeee2e, #ffffff1a, #a3a3a379) ;
+    margin: auto;
+    /* margin-bottom: 10.5vh; */
+    width: 500px;
+}
+
+.score{
+    margin-block: 20px;
+    justify-content: space-around;
+}
+.playerScore, .computerScore{
+    width: 220px;
+}
+.sepration{
+    border: 1px solid #545454;
+    mix-blend-mode: screen;
+    width: 1px;
+    height: 18vh;
+    position: absolute;
+}
+.computerMove, .playerMove{
+    width: 180px;
+    flex-direction: column;
+}
+.displayGame{
+    font-size: 18px;
+    border: 1px solid #545454;
+    mix-blend-mode: screen;
+    width: 400px;
+    height: 22vh;
+    background: linear-gradient(to bottom right, #44444499, #ffffff1a, #eeeeee1e) ;
+    text-shadow: 0 0 3px #86efff;
+    margin: auto;
+    padding-top: 15px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.result{
+    background: linear-gradient(to right, #222222b7, #585454a4);
+    border: 1px solid #545454;
+    mix-blend-mode: screen;
+    border-radius: 100%;
+    margin: 10px 30px;
+    font-size: 2rem;
+    text-shadow: 0 0 22px #787878;
+    font-weight: 500;
+}
+.options{
+    margin: auto;
+    width: 80%;
+    margin-block: 20px;
+}
+
+.options button{
+    background: linear-gradient(to bottom right, #eeeeee1e, #ffffff1a, #5f5f5f99) ;
+    font-size: 80px;
+    border: 1px solid #545454;
+    mix-blend-mode: screen;
+    border-radius: 12px;
+}
+
+button:hover{
+    background: linear-gradient(to bottom right, #7d7d7d53, #f7f7f772);
+    cursor: pointer;
+}
+
+button:active{
+    background: linear-gradient(to bottom right, #54545493, #f7f7f7a2);
+}
+
+.move{
+    font-size: 50px;
+    mix-blend-mode: screen;
+}
+
+.chooseMove{
+    margin-top: 20px;
+}
+
+.moveLeft, .ml{
+    font-size: 18px;
+}
+
+.em{
+    /* background-color: #808080; */
+    background-color: #23232369;
+    color: #fee1fa;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    padding-top: 160px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: 0 2px 40px #000000ec;
+}
+
+.final-result{
+    background: linear-gradient(to bottom right, #441460f1, #622983fa, #5b0c5bf4);
+    color: #bba200;
+    position: absolute;
+    top: calc(50vh - 110px);
+    left: -150%;
+    /* left: calc(50vw - 275px); */
+    /* width: 550px; */
+    width: 400px;
+    height: 300px;
+    border: 1px solid #cbcbcb52;
+    border-radius: 5% 140% 5% 140%;
+    font-weight: 500;
+    padding: 20px;
+    z-index: 2;
+    justify-content: center;
+    text-shadow: 0 0 5px #808080;
+    font-size: 1.4rem;
+    justify-content: space-around;
+}
+
+.ps{
+    justify-content: start;
+    flex-direction: column;
+}
+.r{
+    border: 1px solid #cbcbcb30;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    text-shadow: 0 0 5px #aeb39600;
+    position: absolute;
+    top: calc(50% - 77px);
+    background-color: #cbcbcb0c;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.cs{
+    justify-content: end;
+    flex-direction: column;
+}
+
+.reset{
+    /* background: linear-gradient(to right, #54545423, #f7f7f771); */
+    /* background-color: #212121; */
+    background-color:#d4a4ac;
+    color: #000000;
+    font-size: large;
+    border: 1px solid #5a5555;
+    mix-blend-mode: screen; 
+    padding: 3px 10px;
+    margin-block: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.reset:hover{
+    background: linear-gradient(to right, #dbabb3, #b7a2a6);
+    font-size: 1.6rem;
+    margin-bottom: 18px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .title{
+        padding-top: 8%;
+        font-size: 2.3rem;
+        padding-bottom: 1.4%;
+    }
+    .game{width: 400px; font-size: 1.2rem;}
+    .displayGame{
+        width: 380px;
+        padding-top: 8px;
+    }
+    .sepration{height: 19vh;}
+    .computerMove, .playerMove{
+        width: 150px;
+        font-size: 1rem;
+    }
+    .options{margin-block: 10px;}
+    .options button{font-size: 70px;}
+    .move{font-size: 25px;}
+    .moveLeft, .ml{font-size: 15px;}
+    .reset{font-size: 1.2rem;}   
+    .reset:hover{
+        font-size: 1.3rem;
+        margin-bottom: 17px;
+    }
+    .final-result{
+        top: calc(50vh - 160px);
+        font-size: 1.2rem;
+    }
+    .em{
+        padding-top: 130px;
+        font-size: 1.7rem;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .title{
+        padding-top: 8%;
+        font-size: 2.1rem;
+        padding-bottom: 1.4%;
+    }
+    .game{width: 370px; font-size: 1.1rem;}
+    .displayGame{
+        width: 350px;
+        padding-top: 8px;
+    }
+    .em{
+        padding-top: 110px;
+    }
+}

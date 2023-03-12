@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="rock-paper-scissors.png" type="image/x-icon">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <!-- <div class="getName">
+        <form class="ign">
+            <span class="gnm">Please Enter your Name : </span>
+            <input class="nm" type="text" placeholder="Name" autofocus>
+            <button type="submit" class="nbtn">Submit</button>
+        </form>
+    </div> -->
+    
+    
+    <div class="title">ROCK PAPER SCISSOR</div>
+    <section class="game">
+        <div class="score flex">
+            <div class="playerScore">
+                <span class="pNam-s">You</span>r Score
+                <div class="p-count count">0</div>
+            </div>
+            <div class="computerScore">
+                Computer's Score
+                <div class="c-count count">0</div>
+            </div>
+        </div>
+
+        <div class="displayGame flex">
+            <div class="playerMove flex">
+                <div><span class="pNam-m">You</span>r Move</div>
+                <div class="pm move"></div>
+                <div class="pw"></div>
+            </div>
+            <div class="sepration"></div>
+            <div class="computerMove flex">
+                Computer's Move
+                <div class="cm move"></div>
+                <div class="cw"></div>
+            </div>
+        </div>
+        <div class="result"></div>
+        
+        <div class="chooseMove">Choose Your Move</div>
+        
+        <div id="Choose" class="options flex">
+            <button class="rps" value="Rock" >✊</button>
+            <button class="rps" value="Paper" >✋</button>
+            <button class="rps" value="Scissor" >✌️</button>
+        </div>
+
+        <div><span class="ml">Moves Left : </span><span class="moveLeft">10</span></div>
+        
+        <div class="em"></div>
+        <div class="final-result flex">
+            <div class="ps flex">
+                <div class="pn"><span class="pNam-sf">You</span>r Score</div>
+                <div class="pms"></div>
+            </div>
+            <div class="r flex">
+            
+            </div>
+            <div class="cs flex">
+                <div class="cn"></div>
+                <div class="cms"></div>    
+            </div>
+        </div>
+            
+        <button class="reset">Restart</button>
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

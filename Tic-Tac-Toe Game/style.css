@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    /* background: linear-gradient(to bottom right, #ead329, #80c3fa); */
+    background: linear-gradient(to bottom right, #4d166c, #7a117a, #7832a1);
+
+
+}
+/* .flex{
+    display: flex;
+    justify-content: space-around;
+} */
+
+.title{
+    position: relative;
+    color: #fafafa;
+    padding-top: 1%;
+    padding-bottom: 1.2%;
+    font-size: 3.5rem;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.game{
+    margin: auto;
+    margin-top: 30px;
+    color: #ead329;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.a{
+    background-color: #fafafa;
+    color: #af24b9;
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+    font-weight: 500;
+    font-size: 70px;
+}
+
+.a:hover{
+    background: linear-gradient(to bottom right, #eeeeee, #eaeaea);
+    margin-top: -3px;
+}
+button:focus{
+    outline: none;
+}
+.a:active{
+    outline: solid #ead329;
+    margin-top: -1px;
+}
+ 
+.reset{
+    position: relative;
+    border: none;
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-weight: 400;
+    color: #686c6f;
+    z-index: 12;
+}
+.reset:hover{
+    background: linear-gradient(to bottom right, #e0e0e0, #cccccc);
+}
+.reset:active{
+    margin-top: 29px;
+}
+
+.em{
+    background-color: #5a5a5abe;
+    color: #ffdd00;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-shadow: 0 0 7px #cbc072;
+}
+
+.final-result{
+    background: linear-gradient(to bottom right, #4d166c, #7a117a, #7832a1);
+    color: #ffd1f4;
+    position: absolute;
+    top: calc(50vh - 160px);
+    left: calc(50vw - 190px);
+    left: -150%;
+    /* width: 550px; */
+    width: 380px;
+    height: 300px;
+    border: 1px solid #545454;
+    border-radius: 5% 140% 5% 140%;
+    font-weight: 500;
+    padding-block: 120px;
+    z-index: 2;
+    text-shadow: 0 0 5px #808080;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 500px) {
+    .title{font-size: 3rem;}
+    .final-result{top: calc(50vh - 200px);}
+    .game{
+        width: 380px;
+        height: 380px;
+    }
+    .a{
+        width: 114px;
+        height: 114px;
+    }
+}
